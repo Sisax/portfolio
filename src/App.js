@@ -13,12 +13,16 @@ import Experience from './components/Experience/Experience';
 function App() {
   return (
     <div className="App">
-      <Sidebar />
-      <main>
-        <Introduction />
-        <Skills />
-        <Experience />
-      </main>
+      <Router>
+        <Sidebar />
+        <main>
+          <Switch>
+            <Route exact path="/" component={Introduction} />
+            <Route exact path="/skills" component={Skills} />
+            <Route exact path="/experience" component={Experience} />
+          </Switch>
+        </main>
+      </Router>
     </div>
   );
 }

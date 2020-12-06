@@ -3,8 +3,34 @@
   padding: 0;
 }
 
+body {
+  background-color: #333;
+}
+
+.App {
+  width: 1000px;
+  height: 90vh;
+  overflow: scroll;
+  margin: 25px auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px 1px black;
+}
+
+.App::-webkit-scrollbar {
+  width: 5px;
+}
+
+.App::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+.App::-webkit-scrollbar-thumb {
+  background: #999;
+}
+
 main {
-  margin-left: 30vw;
+  margin-left: 340px;
+  background-color: #a23455;
 }
 
 /*# sourceMappingURL=App.css.map */
