@@ -2,21 +2,45 @@ $base-color: #4824aa;
 
 aside {
   background-color: $base-color;
-  height: 90vh;
-  width: 300px;
-  position: fixed;
-  display: flex;
+  display: grid;
   justify-content: center;
-  align-items: center;
   border-radius: 10px 0px 0px 10px;
-}
+  position: relative;
+  font-family: 'Poppins', sans-serif;
 
-aside {
+  img {
+    position: absolute;
+    top: 15px;
+    left: 60px;
+    width: 180px;
+    height: auto;
+  }
+
+  .hello {
+    text-align: center;
+    position: absolute;
+    top: 250px;
+    left: 70px;
+  }
+
+  .bubble {
+    top: 190px;
+    left: 5%;
+    width: 90%;
+    height: 170px;
+    transform: scaleY(-1);
+  }
+
   ul {
     list-style-type: none;
     text-align: right;
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
+    margin-top: 350px;
+
+    li:first-of-type {
+      padding-top: 25px;
+    }
 
     li {
       padding-bottom: 25px;
@@ -26,6 +50,14 @@ aside {
         height: 75px;
         border: none;
         border-radius: 30px;
+      }
+
+      button:focus {
+        outline: none;
+      }
+
+      button:active {
+        outline: none;
       }
     }
   }

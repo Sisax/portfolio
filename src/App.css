@@ -4,33 +4,64 @@
 }
 
 body {
-  background-color: #333;
+  background-color: #ccc;
 }
 
 .App {
   width: 1000px;
   height: 90vh;
-  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #363636;
   margin: 25px auto;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 1px black;
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  grid-template-rows: 1fr;
 }
 
 .App::-webkit-scrollbar {
-  width: 5px;
+  width: 0px;
 }
 
 .App::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: transparent;
+  display: block;
+  margin: 10px 0px 10px 0px;
 }
 
 .App::-webkit-scrollbar-thumb {
-  background: #999;
+  background: rgba(168, 63, 160, 0.904);
+  width: 5px;
+  border-radius: 4px;
+}
+
+.App::-webkit-scrollbar-button {
+  height: 0px;
 }
 
 main {
-  margin-left: 340px;
-  background-color: #a23455;
+  background-color: #363636;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+main header {
+  position: relative;
+}
+main header img {
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+main header h1 {
+  position: absolute;
+  top: 75%;
+  z-index: 1;
+}
+main .introduction p {
+  padding: 15px;
 }
 
 /*# sourceMappingURL=App.css.map */
