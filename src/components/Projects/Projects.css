@@ -1,0 +1,31 @@
+#projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1.5fr;
+  justify-items: center;
+  margin: 25px;
+}
+#projects img {
+  margin: 15px 15px 10px 15px;
+  width: 90%;
+  height: auto;
+}
+#projects .project {
+  margin: 15px;
+  text-align: center;
+  position: relative;
+}
+#projects .project h3 {
+  margin: 10px 0px 10px 0px;
+}
+#projects .project ul, #projects .project p {
+  text-align: justify;
+  margin-top: 10px;
+}
+
+#projects-title {
+  margin: 25px;
+  border-bottom: 1px solid white;
+}
+
+/*# sourceMappingURL=Projects.css.map */

@@ -1,0 +1,68 @@
+.skills h2 {
+  margin: 40px 25px 40px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+}
+
+.skill-slide {
+  height: 30px;
+  width: 500px;
+  margin: 25px;
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 1px black;
+}
+.skill-slide h3 {
+  transform: translateX(530px);
+}
+.skill-slide .htmlBar, .skill-slide .cssBar, .skill-slide .javascriptBar, .skill-slide .reactBar, .skill-slide .nodejsBar, .skill-slide .hungarianBar, .skill-slide .englishBar, .skill-slide .germanBar {
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 0;
+  height: 100%;
+  border-radius: 15px;
+  z-index: 1;
+}
+.skill-slide .htmlBar {
+  width: 95%;
+  box-shadow: 0px 0px 5px 1px #e54c22;
+  background: #e54c22;
+}
+.skill-slide .cssBar {
+  width: 95%;
+  box-shadow: 0px 0px 5px 1px #25a1e1;
+  background: #25a1e1;
+}
+.skill-slide .javascriptBar {
+  width: 80%;
+  box-shadow: 0px 0px 5px 1px #fdc910;
+  background: #fdc910;
+}
+.skill-slide .reactBar {
+  width: 75%;
+  box-shadow: 0px 0px 5px 1px #61dafb;
+  background: #61dafb;
+}
+.skill-slide .nodejsBar {
+  width: 55%;
+  box-shadow: 0px 0px 5px 1px #80bd01;
+  background: #80bd01;
+}
+.skill-slide .hungarianBar {
+  width: 100%;
+  box-shadow: 0px 0px 5px 1px #29b826;
+  background: #29b826;
+}
+.skill-slide .englishBar {
+  width: 85%;
+  box-shadow: 0px 0px 5px 1px #002eb8;
+  background: #002eb8;
+}
+.skill-slide .germanBar {
+  width: 20%;
+  box-shadow: 0px 0px 5px 1px #ff1616;
+  background: #ff1616;
+}
+
+/*# sourceMappingURL=Skills.css.map */

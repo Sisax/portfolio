@@ -1,0 +1,85 @@
+$htmlcolor: #e54c22;
+$csscolor: #25a1e1;
+$jscolor: #fdc910;
+$reactcolor: #61dafb;
+$nodecolor: #80bd01;
+$hungariancolor: #29b826;
+$englishcolor: #002eb8;
+$germancolor: #ff1616;
+
+.skills h2 {
+  margin: 40px 25px 40px 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.596);
+} 
+
+.skill-slide {
+  height: 30px;
+  width: 500px;
+  margin: 25px;
+  position: relative;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 3px 1px black;
+
+  h3 {
+    transform: translateX(530px);
+  }
+
+  .htmlBar, .cssBar, .javascriptBar, .reactBar, .nodejsBar, .hungarianBar, .englishBar, .germanBar {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border-radius: 15px;
+    z-index: 1;
+  }
+
+  .htmlBar {
+    width: 95%;
+    box-shadow: 0px 0px 5px 1px $htmlcolor;
+    background: $htmlcolor;
+  }
+
+  .cssBar {
+    width: 95%;
+    box-shadow: 0px 0px 5px 1px $csscolor;
+    background: $csscolor;
+  }
+
+  .javascriptBar {
+    width: 80%;
+    box-shadow: 0px 0px 5px 1px $jscolor;
+    background: $jscolor;
+  }
+
+  .reactBar {
+    width: 75%;
+    box-shadow: 0px 0px 5px 1px $reactcolor;
+    background: $reactcolor;
+  }
+
+  .nodejsBar {
+    width: 55%;
+    box-shadow: 0px 0px 5px 1px $nodecolor;
+    background: $nodecolor;
+  }
+
+  .hungarianBar {
+    width: 100%;
+    box-shadow: 0px 0px 5px 1px $hungariancolor;
+    background: $hungariancolor;
+  }
+
+  .englishBar {
+    width: 85%;
+    box-shadow: 0px 0px 5px 1px $englishcolor;
+    background: $englishcolor;
+  }
+
+  .germanBar {
+    width: 20%;
+    box-shadow: 0px 0px 5px 1px $germancolor;
+    background: $germancolor;
+  }
+}

@@ -1,0 +1,28 @@
+#experience {
+  padding: 25px;
+}
+
+.education h2, .experience h2 {
+  border-bottom: 1px solid white;
+  margin-bottom: 25px;
+  color: #40b6f1;
+}
+
+.school {
+  margin: 20px 0px 20px 0px;
+}
+.school h3 {
+  font-size: 14px;
+  color: #40b6f1;
+}
+.school h2 {
+  font-size: 18px;
+  border: none;
+  margin: 5px 0px 10px 0px;
+}
+.school p, .school ul {
+  font-family: "Open sans", sans-serif;
+  padding: 5px 20px 5px 20px;
+}
+
+/*# sourceMappingURL=Experience.css.map */

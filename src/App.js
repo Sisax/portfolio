@@ -9,6 +9,8 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Introduction from './components/Introduction/Introduction';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
+import Projects from './components/Projects/Projects';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
             <Route exact path="/" component={Introduction} />
             <Route exact path="/skills" component={Skills} />
             <Route exact path="/experience" component={Experience} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/contact" component={Contact} />
           </Switch>
         </main>
       </Router>

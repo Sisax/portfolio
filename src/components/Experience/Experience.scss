@@ -1,0 +1,33 @@
+$header-color: #40b6f1;
+
+#experience {
+  padding: 25px;
+}
+
+.education, .experience {
+  h2 {
+    border-bottom: 1px solid white;
+    margin-bottom: 25px;
+    color: $header-color;
+  }
+}
+
+.school {
+  margin: 20px 0px 20px 0px;
+
+  h3 {
+    font-size: 14px;
+    color: $header-color;
+  }
+
+  h2 {
+    font-size: 18px;
+    border: none;
+    margin: 5px 0px 10px 0px;
+  }
+
+  p, ul {
+    font-family: 'Open sans', sans-serif;
+    padding: 5px 20px 5px 20px;
+  }
+}

@@ -10,41 +10,22 @@ body {
 .App {
   width: 1000px;
   height: 90vh;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  background-color: #363636;
+  background-color: #2b2b2b;
   margin: 25px auto;
   border-radius: 10px;
   box-shadow: 0px 0px 20px 1px black;
   display: grid;
   grid-template-columns: 3fr 7fr;
   grid-template-rows: 1fr;
-}
-
-.App::-webkit-scrollbar {
-  width: 0px;
-}
-
-.App::-webkit-scrollbar-track {
-  background: transparent;
-  display: block;
-  margin: 10px 0px 10px 0px;
-}
-
-.App::-webkit-scrollbar-thumb {
-  background: rgba(168, 63, 160, 0.904);
-  width: 5px;
-  border-radius: 4px;
-}
-
-.App::-webkit-scrollbar-button {
-  height: 0px;
+  overflow: hidden;
 }
 
 main {
-  background-color: #363636;
+  background-color: #2b2b2b;
   font-family: "Poppins", sans-serif;
   color: white;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 main header {
   position: relative;
@@ -57,11 +38,49 @@ main header img {
 }
 main header h1 {
   position: absolute;
-  top: 75%;
+  top: 65%;
+  right: 20%;
   z-index: 1;
 }
+main header p {
+  position: absolute;
+  top: 75%;
+}
 main .introduction p {
-  padding: 15px;
+  padding: 25px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 28px;
+}
+
+main::-webkit-scrollbar {
+  width: 0px;
+}
+
+main::-webkit-scrollbar-track {
+  background: transparent;
+  display: block;
+  margin: 10px 0px 10px 0px;
+  border-radius: 0px 20px 20px 0px;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: rgba(168, 63, 160, 0.904);
+  width: 5px;
+  border-radius: 4px;
+}
+
+main::-webkit-scrollbar-button {
+  height: 0px;
+}
+
+hr {
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 25px;
+  border: none;
+  background-color: white;
+  box-shadow: 0px 0px 5px 2px #00d9ff;
 }
 
 /*# sourceMappingURL=App.css.map */
