@@ -1,5 +1,6 @@
 import React from 'react';
 import portfolio from '../../assets/portfolio.jpg'
+import './Introduction.css';
 
 function Introduction() {
   return (

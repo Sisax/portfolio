@@ -1,0 +1,36 @@
+header {
+  position: relative;
+  width: 100%;
+}
+header img {
+  width: 100%;
+  height: auto;
+  -webkit-mask-image: -webkit-gradient(linear, top left, bottom left, from(rgba(0, 0, 0, 0.9)), to(rgba(0, 0, 0, 0)));
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0));
+}
+header h1 {
+  position: absolute;
+  top: 65%;
+  right: 20%;
+  z-index: 1;
+}
+header p {
+  position: absolute;
+  top: 75%;
+}
+
+.introduction p {
+  text-indent: 25px;
+  padding: 25px;
+  font-size: 18px;
+  text-align: justify;
+  line-height: 28px;
+}
+.introduction .introText {
+  padding: 10px 25px 10px 25px;
+}
+.introduction .introText:first-of-type {
+  padding-top: 25px;
+}
+
+/*# sourceMappingURL=Introduction.css.map */

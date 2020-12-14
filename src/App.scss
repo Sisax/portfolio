@@ -29,38 +29,6 @@ main {
   color: white;
   overflow-y: scroll;
   overflow-x: hidden;
-
-  header {
-    position: relative;
-
-    img {
-      width: 100%;
-      height: auto;
-      -webkit-mask-image:-webkit-gradient(linear, top left, bottom left, from(rgba(0,0,0,0.9)), to(rgba(0,0,0,0)));
-      mask-image: linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0));
-    }
-
-    h1 {
-      position: absolute;
-      top: 65%;
-      right: 20%;
-      z-index: 1;
-    }
-
-    p {
-      position: absolute;
-      top: 75%;
-    }
-  }
-
-  .introduction {
-    p {
-      padding: 25px;
-      font-size: 18px;
-      text-align: justify;
-      line-height: 28px;
-    }
-  }
 }
 
 main::-webkit-scrollbar {
