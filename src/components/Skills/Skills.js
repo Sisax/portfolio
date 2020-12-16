@@ -1,9 +1,21 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import './Skills.css';
+
+const transition = {
+  duration: .7, 
+  ease: [0.43, 0.13, 0.23, 0.96]
+};
 
 function Skills() {
   return (
-    <div class="skills">
+    <motion.div 
+      initial={{ opacity: 0 }} 
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition} 
+      class="skills"
+    >
       <h2>Coding</h2>
       <div class="html skill-slide">
         <div class="htmlBar">95%</div>
@@ -38,7 +50,7 @@ function Skills() {
         <div class="germanBar">20%</div>
         <h3>German</h3>
       </div> 
-    </div>
+    </motion.div>
   )
 }
 

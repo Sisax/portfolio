@@ -1,9 +1,20 @@
 import React from 'react';
 import './Experience.css';
+import { motion } from 'framer-motion';
+
+const transition = {
+  duration: .7, 
+  ease: [0.43, 0.13, 0.23, 0.96]
+};
 
 function Experience() {
   return (
-    <div id="experience">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      id="experience"
+    >
       <div class="education">
         <h2>Education</h2>
         <div class="school">
@@ -42,7 +53,7 @@ function Experience() {
           </ul>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

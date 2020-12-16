@@ -32,11 +32,13 @@ aside ul li button:hover {
   box-shadow: inset 0px 0px 5px 2px #00d9ff, 0px 0px 5px 2px #00d9ff;
 }
 aside ul li button:focus {
-  outline: none;
   box-shadow: inset 0px 0px 5px 2px #00d9ff, 0px 0px 5px 2px #00d9ff;
+  outline: none;
 }
 aside ul li button:active {
   outline: none;
+}
+aside ul li .activeBtn {
   box-shadow: inset 0px 0px 5px 2px #00d9ff, 0px 0px 5px 2px #00d9ff;
 }
 

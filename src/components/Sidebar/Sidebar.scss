@@ -39,12 +39,15 @@ aside {
       }
 
       button:focus {
-        outline: none;
         box-shadow: inset 0px 0px 5px 2px $neon-blue, 0px 0px 5px 2px $neon-blue;
+        outline: none;
       }
 
       button:active {
         outline: none;
+      }
+
+      .activeBtn {
         box-shadow: inset 0px 0px 5px 2px $neon-blue, 0px 0px 5px 2px $neon-blue;
       }
     }

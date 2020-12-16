@@ -2,10 +2,22 @@ import React from 'react';
 import './Projects.css';
 import foxticket from '../../assets/foxticket.jpg';
 import noimage from '../../assets/no-image-available.png';
+import { motion } from 'framer-motion';
+
+const transition = {
+  duration: .7, 
+  ease: [0.43, 0.13, 0.23, 0.96]
+};
 
 function Projects() {
   return (
-    <div>
+    <motion.div 
+    initial={{ opacity: 0 }} 
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0 }}
+    transition={transition} 
+    class="Projects"
+    >
       <h2 id="projects-title">My Projects</h2>
       <div id="projects">
         <img src={foxticket} alt="" />
@@ -25,7 +37,7 @@ function Projects() {
           <p>Work In Progress</p>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

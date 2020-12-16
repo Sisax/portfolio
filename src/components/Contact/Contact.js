@@ -5,10 +5,22 @@ import facebook from '../../assets/facebook.png';
 import tel from '../../assets/tel.png';
 import github from '../../assets/github.png';
 import linkedin from '../../assets/linkedin.png';
+import { motion } from 'framer-motion';
+
+const transition = {
+  duration: .7, 
+  ease: [0.43, 0.13, 0.23, 0.96]
+};
 
 function Contact() {
   return (
-    <div id="contact">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      transition={transition}
+      id="contact"
+    >
       <h2>Contact</h2>
       <div class="contact">
         <img src={email} alt=""/>
@@ -37,7 +49,7 @@ function Contact() {
           <p>Github - Sisax</p>
         </a>
       </div>
-    </div>
+    </motion.div>
   )
 }
 
