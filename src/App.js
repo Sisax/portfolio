@@ -28,7 +28,7 @@ function App() {
         <Router>
             <Sidebar />
             <main>
-              <AnimatePresence initial={false}>
+              <AnimatePresence initial={false} exitBeforeEnter>
                 <Switch>
                   <Route exact path="/portfolio" render={() => <Introduction />} />
                   <Route exact path="/portfolio/skills" render={ () => <Skills />} />
