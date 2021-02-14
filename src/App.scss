@@ -21,6 +21,11 @@ body {
   grid-template-columns: 3fr 7fr;
   grid-template-rows: 1fr;
   overflow: hidden;
+  position: relative;
+
+  #hamburger-menu {
+    display: none;
+  }
 }
 
 main {
@@ -52,15 +57,6 @@ main::-webkit-scrollbar-button {
   height: 0px;
 }
 
-hr {
-  width: 70%;
-  margin-left: 15%;
-  margin-bottom: 25px;
-  border: none;
-  background-color: white;
-  box-shadow: 0px 0px 5px 2px $neon-blue;
-}
-
 /* on page load animation */
 .fade-appear {
   opacity: 0;
@@ -80,4 +76,34 @@ hr {
 .fade-enter.fade-enter-active {
   opacity: 1;
   transition: opacity 700ms ease-out;
+}
+
+@media screen and (max-width: 900px) {
+  .App {
+    width: 90%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr;
+
+    #hamburger-menu {
+      display: block;
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 40px;
+      height: auto;
+      z-index: 1000;
+    }
+
+    .closed-menu {
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      font-size: 4vh;
+      font-weight: bold;
+      letter-spacing: 10px;
+      text-shadow: 0px 0px 20px $neon-blue;
+      padding-left: 40px;
+    }
+  }
 }

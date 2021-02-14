@@ -46,10 +46,6 @@ function Skills() {
         <div class="englishBar">85%</div>
         <h3>English</h3>
       </div>
-      <div class="german skill-slide">
-        <div class="germanBar">20%</div>
-        <h3>German</h3>
-      </div> 
     </motion.div>
   )
 }

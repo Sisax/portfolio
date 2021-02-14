@@ -1,6 +1,9 @@
 #experience {
   padding: 25px;
 }
+#experience li {
+  padding-bottom: 10px;
+}
 
 .education h2, .experience h2 {
   border-bottom: 1px solid white;
@@ -14,6 +17,7 @@
 .school h3 {
   font-size: 14px;
   color: #40b6f1;
+  margin-bottom: 10px;
 }
 .school h2 {
   font-size: 18px;
@@ -23,6 +27,12 @@
 .school p, .school ul {
   font-family: "Open sans", sans-serif;
   padding: 5px 20px 5px 20px;
+}
+
+@media screen and (max-width: 900px) {
+  .education hr {
+    margin: 15px auto;
+  }
 }
 
 /*# sourceMappingURL=Experience.css.map */

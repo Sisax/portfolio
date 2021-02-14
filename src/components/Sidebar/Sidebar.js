@@ -1,25 +1,32 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import './Sidebar.css';
 import { changeActiveButton } from '../../actions/buttonAction';
-import store from '../../store';
+import { motion } from 'framer-motion';
+
+const transition = {
+  duration: .7, 
+  ease: [0.43, 0.13, 0.23, 0.96]
+};
 
 function Sidebar() {
   const buttonState = useSelector((state) => state.button);
 
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    dispatch(changeActiveButton('Introduction'))
-  }, [dispatch]);
-
   function handleClick(e) {
     dispatch(changeActiveButton(e.target.innerText))
   };
 
   return (
-    <aside>
+    <motion.aside
+      initial={{ opacity: 0, scale: 1 }}
+      animate={{ opacity: 1, scale: 1.2 }}
+      exit={{ opacity: 0, scale: 1 }}
+      transition={transition}
+      id="contact"
+    >
       <ul>
         <li><Link to="/portfolio"><button className={
           buttonState.buttonActive === 'Introduction' ? "activeBtn" : "inactiveBtn"
@@ -38,7 +45,7 @@ function Sidebar() {
           buttonState.buttonActive === 'Contact' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Contact</button></Link></li>
       </ul>
-    </aside>
+    </motion.aside>
   )
 }
 

@@ -65,4 +65,16 @@
   background: #ff1616;
 }
 
+@media screen and (max-width: 900px) {
+  .skill-slide {
+    width: 80vw;
+    margin-left: 5vw;
+    margin-top: 60px;
+  }
+  .skill-slide h3 {
+    z-index: 10;
+    transform: translateX(10px) translateY(-40px);
+  }
+}
+
 /*# sourceMappingURL=Skills.css.map */

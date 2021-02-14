@@ -1,9 +1,9 @@
-$base-color: #422e9994;
+$base-color: #15152efd;
 $neon-blue:rgb(0, 217, 255);
 $button-off: rgba(0, 99, 116, 0.788);
 
 aside {
-  background-color: $base-color;
+  background-image: linear-gradient(90deg, rgb(15, 43, 70) 0%, rgba(43,43,43,1) 80%, rgba(43,43,43,1) 100%);
   display: grid;
   justify-content: center;
   align-items: center;
@@ -52,4 +52,10 @@ aside {
       }
     }
   }
+}
+
+@media screen and (max-width: 900px) {
+  aside {
+    background: linear-gradient(180deg, rgba(15,43,70,1) 0%, rgba(43,43,43,1) 64%, rgba(43,43,43,1) 100%);
+  } 
 }
