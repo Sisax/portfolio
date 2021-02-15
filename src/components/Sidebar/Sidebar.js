@@ -28,20 +28,20 @@ function Sidebar() {
       id="contact"
     >
       <ul>
-        <li><Link to="/portfolio"><button className={
+        <li><Link to="/"><button className={
           buttonState.buttonActive === 'Introduction' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Introduction</button></Link></li>
-        <li><Link to="/portfolio/skills"><button className={
+        <li><Link to="/skills"><button className={
           buttonState.buttonActive === 'Skills' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Skills</button></Link></li>
-        <li><Link to="/portfolio/experience"><button className={
+        <li><Link to="/experience"><button className={
           buttonState.buttonActive === 'Education and\nExperience' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Education and<br />
         Experience</button></Link></li>
-        <li><Link to="/portfolio/projects"><button className={
+        <li><Link to="/projects"><button className={
           buttonState.buttonActive === 'Projects' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Projects</button></Link></li>
-        <li><Link to="/portfolio/contact"><button className={
+        <li><Link to="/contact"><button className={
           buttonState.buttonActive === 'Contact' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Contact</button></Link></li>
       </ul>

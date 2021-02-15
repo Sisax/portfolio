@@ -74,11 +74,11 @@ function App() {
             <main>
               <Switch>
                 <AnimatePresence initial={false} exitBeforeEnter>
-                  <Route exact path="/portfolio" render={() => <Introduction />} />
-                  <Route exact path="/portfolio/skills" render={ () => <Skills />} />
-                  <Route exact path="/portfolio/experience" render={ () => <Experience />} />
-                  <Route exact path="/portfolio/projects" render={ () => <Projects />} />
-                  <Route exact path="/portfolio/contact" render={ () => <Contact />} />
+                  <Route exact path="/" render={() => <Introduction />} />
+                  <Route exact path="/skills" render={ () => <Skills />} />
+                  <Route exact path="/experience" render={ () => <Experience />} />
+                  <Route exact path="/projects" render={ () => <Projects />} />
+                  <Route exact path="/contact" render={ () => <Contact />} />
                 </AnimatePresence>
               </Switch>
             </main>
