@@ -1,3 +1,5 @@
+$phpcolor: #767fdf;
+$laravelcolor: #F05340;
 $htmlcolor: #e54c22;
 $csscolor: #25a1e1;
 $jscolor: #fdc910;
@@ -10,10 +12,14 @@ $germancolor: #ff1616;
 .skills h2 {
   margin: 40px 25px 40px 25px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.596);
-} 
+}
+
+.skills h3 {
+  font-size: 18px;
+}
 
 .skill-slide {
-  height: 30px;
+  height: 14px;
   width: 500px;
   margin: 25px;
   position: relative;
@@ -22,17 +28,29 @@ $germancolor: #ff1616;
   box-shadow: 0px 0px 3px 1px black;
 
   h3 {
-    transform: translateX(530px);
+    transform: translate(530px, -7px);
   }
 
-  .htmlBar, .cssBar, .javascriptBar, .reactBar, .nodejsBar, .hungarianBar, .englishBar, .germanBar {
+  .laravelBar, .phpBar, .htmlBar, .cssBar, .javascriptBar, .reactBar, .nodejsBar, .hungarianBar, .englishBar {
     position: absolute;
     text-align: center;
     top: 0;
     left: 0;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 7px;
     z-index: 1;
+  }
+
+  .phpBar {
+    width: 95%;
+    box-shadow: 0px 0px 5px 1px $phpcolor;
+    background: $phpcolor;
+  }
+
+  .laravelBar {
+    width: 90%;
+    box-shadow: 0px 0px 5px 1px $laravelcolor;
+    background: $laravelcolor;
   }
 
   .htmlBar {
@@ -42,27 +60,21 @@ $germancolor: #ff1616;
   }
 
   .cssBar {
-    width: 95%;
+    width: 70%;
     box-shadow: 0px 0px 5px 1px $csscolor;
     background: $csscolor;
   }
 
   .javascriptBar {
-    width: 80%;
+    width: 70%;
     box-shadow: 0px 0px 5px 1px $jscolor;
     background: $jscolor;
   }
 
   .reactBar {
-    width: 75%;
+    width: 60%;
     box-shadow: 0px 0px 5px 1px $reactcolor;
     background: $reactcolor;
-  }
-
-  .nodejsBar {
-    width: 55%;
-    box-shadow: 0px 0px 5px 1px $nodecolor;
-    background: $nodecolor;
   }
 
   .hungarianBar {
@@ -75,12 +87,6 @@ $germancolor: #ff1616;
     width: 85%;
     box-shadow: 0px 0px 5px 1px $englishcolor;
     background: $englishcolor;
-  }
-
-  .germanBar {
-    width: 20%;
-    box-shadow: 0px 0px 5px 1px $germancolor;
-    background: $germancolor;
   }
 }
 

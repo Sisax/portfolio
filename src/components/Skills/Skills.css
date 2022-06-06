@@ -3,8 +3,12 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.596);
 }
 
+.skills h3 {
+  font-size: 18px;
+}
+
 .skill-slide {
-  height: 30px;
+  height: 14px;
   width: 500px;
   margin: 25px;
   position: relative;
@@ -13,16 +17,26 @@
   box-shadow: 0px 0px 3px 1px black;
 }
 .skill-slide h3 {
-  transform: translateX(530px);
+  transform: translate(530px, -7px);
 }
-.skill-slide .htmlBar, .skill-slide .cssBar, .skill-slide .javascriptBar, .skill-slide .reactBar, .skill-slide .nodejsBar, .skill-slide .hungarianBar, .skill-slide .englishBar, .skill-slide .germanBar {
+.skill-slide .laravelBar, .skill-slide .phpBar, .skill-slide .htmlBar, .skill-slide .cssBar, .skill-slide .javascriptBar, .skill-slide .reactBar, .skill-slide .nodejsBar, .skill-slide .hungarianBar, .skill-slide .englishBar {
   position: absolute;
   text-align: center;
   top: 0;
   left: 0;
   height: 100%;
-  border-radius: 15px;
+  border-radius: 7px;
   z-index: 1;
+}
+.skill-slide .phpBar {
+  width: 95%;
+  box-shadow: 0px 0px 5px 1px #767fdf;
+  background: #767fdf;
+}
+.skill-slide .laravelBar {
+  width: 90%;
+  box-shadow: 0px 0px 5px 1px #F05340;
+  background: #F05340;
 }
 .skill-slide .htmlBar {
   width: 95%;
@@ -30,24 +44,19 @@
   background: #e54c22;
 }
 .skill-slide .cssBar {
-  width: 95%;
+  width: 70%;
   box-shadow: 0px 0px 5px 1px #25a1e1;
   background: #25a1e1;
 }
 .skill-slide .javascriptBar {
-  width: 80%;
+  width: 70%;
   box-shadow: 0px 0px 5px 1px #fdc910;
   background: #fdc910;
 }
 .skill-slide .reactBar {
-  width: 75%;
+  width: 60%;
   box-shadow: 0px 0px 5px 1px #61dafb;
   background: #61dafb;
-}
-.skill-slide .nodejsBar {
-  width: 55%;
-  box-shadow: 0px 0px 5px 1px #80bd01;
-  background: #80bd01;
 }
 .skill-slide .hungarianBar {
   width: 100%;
@@ -58,11 +67,6 @@
   width: 85%;
   box-shadow: 0px 0px 5px 1px #002eb8;
   background: #002eb8;
-}
-.skill-slide .germanBar {
-  width: 20%;
-  box-shadow: 0px 0px 5px 1px #ff1616;
-  background: #ff1616;
 }
 
 @media screen and (max-width: 900px) {

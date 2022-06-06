@@ -6,7 +6,7 @@ import { changeActiveButton } from '../../actions/buttonAction';
 import { motion } from 'framer-motion';
 
 const transition = {
-  duration: .7, 
+  duration: .7,
   ease: [0.43, 0.13, 0.23, 0.96]
 };
 
@@ -38,9 +38,9 @@ function Sidebar() {
           buttonState.buttonActive === 'Education and\nExperience' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Education and<br />
         Experience</button></Link></li>
-        <li><Link to="/projects"><button className={
+        {/*<li><Link to="/projects"><button className={
           buttonState.buttonActive === 'Projects' ? "activeBtn" : "inactiveBtn"
-        } onClick={handleClick}>Projects</button></Link></li>
+        } onClick={handleClick}>Projects</button></Link></li>*/}
         <li><Link to="/contact"><button className={
           buttonState.buttonActive === 'Contact' ? "activeBtn" : "inactiveBtn"
         } onClick={handleClick}>Contact</button></Link></li>

@@ -3,7 +3,7 @@ import './Experience.css';
 import { motion } from 'framer-motion';
 
 const transition = {
-  duration: .7, 
+  duration: .7,
   ease: [0.43, 0.13, 0.23, 0.96]
 };
 
@@ -16,6 +16,50 @@ function Experience() {
       transition={transition}
       id="experience"
     >
+      <div class="experience">
+        <h2>Experience</h2>
+        <div class="school">
+          <h3>2021-</h3>
+          <h2>Udemx Kft.</h2>
+          <h3>Software Developer</h3>
+          <ul>
+            <li>
+              Developing and maintaining the backend of one of the largest e-commerce websites in the automotive industry
+              <ul>
+                <li>PHP with Lumen</li>
+                <li>PostgresSQL</li>
+                <li>PHPUnit</li>
+              </ul>
+            </li>
+            <li>
+              Developing services for a multinational pharmacy corporation
+              <ul>
+                <li>Native PHP</li>
+                <li>Laravel</li>
+                <li>Lumen</li>
+                <li>PHPUnit</li>
+                <li>PostgresSQL</li>
+              </ul>
+            </li>
+            <li>
+              Maintaining the frontend of a parking service
+              <ul>
+                <li>TypeScript</li>
+                <li>Angular</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <div class="school">
+          <h3>2019-2020</h3>
+          <h2>Syngenta Kft.</h2>
+          <h3>Field Technician</h3>
+          <ul>
+            <li>Maintaining and evaluating field experiments</li>
+            <li>Exploring possibilities with the latest technologies</li>
+          </ul>
+        </div>
+      </div>
       <div class="education">
         <h2>Education</h2>
         <div class="school">
@@ -39,19 +83,6 @@ function Experience() {
           <h3>2017-2013</h3>
           <h2>University of Szeged</h2>
           <p class="subtext">Agricultural Engineer, BSc degree</p>
-        </div>
-      </div>
-      <div class="experience">
-        <h2>Experience</h2>
-        <div class="school">
-          <h3>2019-2020</h3>
-          <h2>Syngenta Kft.</h2>
-          <h3>Field Technician</h3>
-          <ul>
-            <li>Maintaining and evaluating field experiments</li>
-            <li>Writing the documentation of the trials</li>
-            <li>Exploring possibilities with the latest technologies</li>
-          </ul>
         </div>
       </div>
     </motion.div>
