@@ -15,7 +15,7 @@ function Introduction() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition}
-      class="introduction"
+      className="introduction"
     >
       <motion.header
         exit={{ opacity: 0 }}
@@ -25,14 +25,14 @@ function Introduction() {
           src={portfolio}
           alt=""
         />
-        <div className="imgBackground"></div>
+        <div classNameName="imgBackground"></div>
         <h1>Hi, my name is Sisa Tamás!</h1>
-        <p class="headerText">I am a software developer who finds his passion in both creative work and solving logical problems.</p>
+        <p className="headerText">I am a software developer who finds his passion in both creative work and solving logical problems.</p>
       </motion.header>
       <hr></hr>
-      <p class="introText">I love extreme sports because they are flashy and based on skills. For me programming is the same in it's core, skill is visible and it comes from invested time.</p>
-      <p class="introText">I started my programming journey learning after work, after a year I realized that this is what I want to do to and joined a bootcamp to speed up the process. For now I am professionally a developer for over a year, mainly focusing on backend work with PHP. What haven't changed is that I still learn consistently after work either about more theoretical CS topics or game development.</p>
-      <p class="introText">In work my mentality is that my main job is to produce the highest quality software compared to my abilities.</p>
+      <p className="introText">I love extreme sports because they are flashy and based on skills. For me programming is the same in it's core, skill is visible and it comes from invested time.</p>
+      <p className="introText">I started my programming journey learning after work, after a year I realized that this is what I want to do to and joined a bootcamp to speed up the process. For now I am professionally a developer for over a year, mainly focusing on backend work with PHP. What haven't changed is that I still learn consistently after work either about more theoretical CS topics or game development.</p>
+      <p className="introText">In work my mentality is that my main job is to produce the highest quality software compared to my abilities.</p>
     </motion.div>
   )
 }

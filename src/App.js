@@ -14,7 +14,7 @@ import Sidebar from './components/Sidebar/Sidebar';
 import Introduction from './components/Introduction/Introduction';
 import Skills from './components/Skills/Skills';
 import Experience from './components/Experience/Experience';
-import Projects from './components/Projects/Projects';
+// import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import hamburger from './assets/hamburger.png';
 
@@ -68,17 +68,17 @@ function App() {
                   animate={{ opacity: 1, scale: 1.1 }}
                   exit={{ opacity: 0, scale: 1 }}
                   transition={transition}
-                  class="closed-menu"
+                  className="closed-menu"
                 >WELCOME!</motion.div>
             }
             <main>
               <Switch>
                 <AnimatePresence initial={false} exitBeforeEnter>
-                  <Route exact path="/" render={() => <Introduction />} />
-                  <Route exact path="/skills" render={ () => <Skills />} />
-                  <Route exact path="/experience" render={ () => <Experience />} />
-                  {/*<Route exact path="/projects" render={ () => <Projects />} />*/}
-                  <Route exact path="/contact" render={ () => <Contact />} />
+                  <Route key="1" exact path="/" render={() => <Introduction />} />
+                  <Route key="2" exact path="/skills" render={ () => <Skills />} />
+                  <Route key="3" exact path="/experience" render={ () => <Experience />} />
+                  {/*<Route key="4" exact path="/projects" render={ () => <Projects />} />*/}
+                  <Route key="5" exact path="/contact" render={ () => <Contact />} />
                 </AnimatePresence>
               </Switch>
             </main>

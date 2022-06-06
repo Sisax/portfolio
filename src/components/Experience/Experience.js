@@ -16,9 +16,9 @@ function Experience() {
       transition={transition}
       id="experience"
     >
-      <div class="experience">
+      <div className="experience">
         <h2>Experience</h2>
-        <div class="school">
+        <div className="school">
           <h3>2021-</h3>
           <h2>Udemx Kft.</h2>
           <h3>Software Developer</h3>
@@ -50,7 +50,7 @@ function Experience() {
             </li>
           </ul>
         </div>
-        <div class="school">
+        <div className="school">
           <h3>2019-2020</h3>
           <h2>Syngenta Kft.</h2>
           <h3>Field Technician</h3>
@@ -60,12 +60,12 @@ function Experience() {
           </ul>
         </div>
       </div>
-      <div class="education">
+      <div className="education">
         <h2>Education</h2>
-        <div class="school">
+        <div className="school">
           <h3>2020</h3>
           <h2>Green Fox Academy</h2>
-          <p class="subtext">Junior full-stack developer</p>
+          <p className="subtext">Junior full-stack developer</p>
           <p>Where I learned:</p>
           <ul>
             <li>Workshop phase (10 weeks): JavaScript, TypeScript, Node.js, Express.js, Git, GitHub, MySQL</li>
@@ -73,16 +73,16 @@ function Experience() {
           </ul>
         </div>
         <hr/>
-        <div class="school">
+        <div className="school">
           <h3>2019-2017</h3>
           <h2>Szent István University</h2>
-          <p class="subtext">Plant Protection Engineer, MSc degree</p>
+          <p className="subtext">Plant Protection Engineer, MSc degree</p>
         </div>
         <hr/>
-        <div class="school">
+        <div className="school">
           <h3>2017-2013</h3>
           <h2>University of Szeged</h2>
-          <p class="subtext">Agricultural Engineer, BSc degree</p>
+          <p className="subtext">Agricultural Engineer, BSc degree</p>
         </div>
       </div>
     </motion.div>

@@ -5,24 +5,24 @@ import budgetapp from '../../assets/budget_app_v1.png';
 import { motion } from 'framer-motion';
 
 const transition = {
-  duration: .7, 
+  duration: .7,
   ease: [0.43, 0.13, 0.23, 0.96]
 };
 
 function Projects() {
   return (
-    <motion.div 
-    initial={{ opacity: 0 }} 
+    <motion.div
+    initial={{ opacity: 0 }}
     animate={{ opacity: 1 }}
     exit={{ opacity: 0 }}
-    transition={transition} 
-    class="Projects"
+    transition={transition}
+    className="Projects"
     >
       <h2 id="projects-title">My Projects</h2>
       <div id="projects">
-        <div class="project foxText">
+        <div className="project foxText">
           <img src={foxticket} alt="" />
-          <div class="project-description">
+          <div className="project-description">
             <h3>Foxticket app</h3>
             <p>An app that manages public transport tickets, it takes orders and giving back QR codes via email or in app</p>
             <ul>
@@ -33,9 +33,9 @@ function Projects() {
             </ul>
           </div>
         </div>
-        <div class="project budgetText">
+        <div className="project budgetText">
           <img src={budgetapp} alt="" />
-          <div class="project-description">
+          <div className="project-description">
             <h3>Budget tracker</h3>
             <p>Work In Progress</p>
           </div>

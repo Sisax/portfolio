@@ -14,40 +14,40 @@ function Skills() {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
       transition={transition}
-      class="skills"
+      className="skills"
     >
       <h2>Coding</h2>
-      <div class="html skill-slide">
-        <div class="htmlBar"></div>
+      <div className="html skill-slide">
+        <div className="htmlBar"></div>
         <h3>HTML</h3>
       </div>
-      <div class="php skill-slide">
-        <div class="phpBar"></div>
+      <div className="php skill-slide">
+        <div className="phpBar"></div>
         <h3>PHP</h3>
       </div>
-      <div class="laravel skill-slide">
-        <div class="laravelBar"></div>
+      <div className="laravel skill-slide">
+        <div className="laravelBar"></div>
         <h3>Laravel</h3>
       </div>
-      <div class="css skill-slide">
-        <div class="cssBar"></div>
+      <div className="css skill-slide">
+        <div className="cssBar"></div>
         <h3>CSS</h3>
       </div>
-      <div class="javascript skill-slide">
-        <div class="javascriptBar"></div>
+      <div className="javascript skill-slide">
+        <div className="javascriptBar"></div>
         <h3>JavaScript</h3>
       </div>
-      <div class="react skill-slide">
-        <div class="reactBar"></div>
+      <div className="react skill-slide">
+        <div className="reactBar"></div>
         <h3>React</h3>
       </div>
       <h2>Language</h2>
-      <div class="hungarian skill-slide">
-        <div class="hungarianBar"></div>
+      <div className="hungarian skill-slide">
+        <div className="hungarianBar"></div>
         <h3>Hungarian</h3>
       </div>
-      <div class="english skill-slide">
-        <div class="englishBar"></div>
+      <div className="english skill-slide">
+        <div className="englishBar"></div>
         <h3>English</h3>
       </div>
     </motion.div>
